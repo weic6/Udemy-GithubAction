@@ -6,6 +6,10 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello World!"
+      - name: Print run multiple shell commands #Running Multi-Line Shell Commands
+        run: | # | is a symbol pipe
+            echo "First output"
+            echo "Second output"
       - name: Print goodbye
         run: echo "Done - bye!"
 
